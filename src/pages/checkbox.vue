@@ -1,34 +1,5 @@
 <template>
   <section>
-    <!-- <div class="field">
-      <o-checkbox 
-      rootClass="flex items-center mb-4"
-        checkCheckedClass="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-        labelClass="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Basic</o-checkbox>
-    </div>
-
-    <div class="field">
-      <o-checkbox :indeterminate="true"> Indeterminate </o-checkbox>
-    </div>
-
-    <div class="field">
-      <o-checkbox v-model="checkboxCustom" true-value="Yes" false-value="No" rootClass="flex items-center mb-4"
-        checkedClass="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-        labelClass="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-        {{ checkboxCustom }}
-      </o-checkbox>
-    </div>
-    <div class="field">
-      <o-checkbox disabled labelClass="ml-2 text-sm font-medium text-gray-400 dark:text-gray-500">Disabled</o-checkbox>
-    </div>
-
-    <o-checkbox :value="true" variant="danger"
-      variantClass	="w-4 h-4 text-red-600 bg-gray-100 border-gray-300 rounded focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-      checkClass=""> Danger </o-checkbox> -->
-
-  </section>
-
-  <section>
     <div class="field">
       <o-checkbox disabled 
       checkClass="w-4 h-4"
