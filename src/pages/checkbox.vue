@@ -30,22 +30,32 @@
 
   <section>
     <div class="field">
-      <o-checkbox disabled
-      labelClass="ml-2 text-sm font-medium text-gray-400 dark:text-gray-500">Disabled</o-checkbox>
+      <o-checkbox disabled labelClass="ml-2 text-sm font-medium text-gray-400 dark:text-gray-500">Disabled</o-checkbox>
     </div>
     <div class="field">
-      <o-checkbox :value="true" variant="danger" 
-      checkClass="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-      labelClass="ml-2 text-sm font-medium text-gray-400 dark:text-gray-500"> Disabled </o-checkbox>
+      <o-checkbox :value="true" variant="danger"
+        checkClass="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+        labelClass="ml-2 text-sm font-medium text-gray-400 dark:text-gray-500"> Disabled </o-checkbox>
     </div>
     <div class="field">
-      <o-checkbox :value="true"
-      labelClass="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"> Default </o-checkbox>
+      <o-checkbox :value="true" labelClass="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"> Default
+      </o-checkbox>
     </div>
     <div class="field">
-      <o-checkbox :value="true" variant="danger" 
-      checkClass="w-4 h-4 text-red-600 bg-gray-100 border-gray-300 rounded focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-      labelClass="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"> Danger </o-checkbox>
+      <o-checkbox :value="true" variant="danger"
+        checkClass="w-4 h-4 text-red-600 bg-gray-100 border-gray-300 rounded focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+        labelClass="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"> Red </o-checkbox>
+    </div>
+
+    <div class="flex items-center mr-4">
+      <input checked id="red-checkbox" type="checkbox" value=""
+        class="w-4 h-4 text-red-600 bg-gray-100 border-gray-300 rounded focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+      <label for="red-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Red</label>
+    </div>
+    <div class="flex items-center mr-4">
+      <input checked id="green-checkbox" type="checkbox" value=""
+        class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 rounded focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+      <label for="green-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Green</label>
     </div>
   </section>
 </template>
@@ -65,8 +75,8 @@ export default defineComponent({
 });
 </script>
 <style>
-  .o-chk--disabled{
-    @apply  bg-gray-100 border-gray-300 
-  }
+.o-chk--disabled {
+  @apply bg-gray-100 border-gray-300
+}
 </style>
     
